@@ -1,0 +1,17 @@
+{
+  "name": "Object.getPrototypeOf",
+  "repo": "polyfill/Object.getPrototypeOf",
+  "description": "Polyfill for Object.getPrototypeOf",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {
+    "shallker/simple-test": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "Object.getPrototypeOf.js"
+  ]
+}

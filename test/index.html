@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <script src="../build/build.js"></script>
+    <script>
+      require('Object.getPrototypeOf')
+
+      var test = require('simple-test');
+
+      function Foo() {}
+
+      Foo.prototype.hi = 'ho';
+
+      test('Object.getPrototypeOf', function () {
+        var foo = new Foo;
+
+        test.eq(Object.getPrototypeOf(foo), Foo.prototype);
+        test.eq(Object.getPrototypeOf(foo).hi, 'ho');
+      });
+      </script>
+  </body>
+</html>
